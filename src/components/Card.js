@@ -13,7 +13,7 @@ function Card({ title, imagen, text, url }) {
                 <h4 className='card-title'>{title}</h4>
                 <p className='card-text text-secondary'>
                     {
-                        text ? text : `hsbdhbdscjsdbehbfsdbhbfdsjhhsbdhbdscjsdbeh`
+                        text ? text : `texto cambiado`
                     }
                 </p>
                 <a href={url} className='btn btn-outline-secondary rounded-0' target="_blank">
