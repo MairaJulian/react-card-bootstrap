@@ -26,29 +26,51 @@ const cards = [
         image: image3,
         url: "https://www.instagram.com/mairajulian/?hl=es",
         text: "Te invito a que visites Instagram"
-    }
+    },
+    {
+        id: 4,
+        title: "Linkedin",
+        image: image1,
+        url: "https://www.linkedin.com/in/maira-julian-768a001b0/",
+        text: ""
+    },
+    {
+        id: 5,
+        title: "Facebook",
+        image: image2,
+        url: "https://www.facebook.com/maira.julian",
+        text: "Aquí puedes navegar por mi página de Facebook"
+    },
+    {
+        id: 6,
+        title: "Instagram",
+        image: image3,
+        url: "https://www.instagram.com/mairajulian/?hl=es",
+        text: "Te invito a que visites Instagram"
+    },
+
 ]
 
 function Cards() {
     console.log(cards);
-  return (
-    <div>
-        <div className='container d-flex justify-content-center animate__animated animate__rotateIn' id='titulo'>
-            <h1>Visita mis redes sociales</h1>
-        </div>
-        <div className='container d-flex justify-content-center align-items-center h-100'>
-            <div className='row'>
-                {
-                    cards.map(card => (
-                        <div className='col-md-4' key={card.id}>
-                            <Card title={card.title} imagen={card.image} url={card.url} text={card.text}/>
-                        </div>
-                    ))
-                }
+    return (
+        <div>
+            <div className='container d-flex justify-content-center animate__animated animate__rotateIn' id='titulo'>
+                <h1>Visita mis redes sociales</h1>
+            </div>
+            <div className='container d-flex justify-content-center align-items-center h-100'>
+                <div className='row'>
+                    {
+                        cards.map(card => (
+                            <div className='col-md-4' key={card.id}>
+                                <Card title={card.title} imagen={card.image} url={card.url} text={card.text} />
+                            </div>
+                        ))
+                    }
+                </div>
             </div>
         </div>
-    </div>
-  )
+    )
 }
 
 export default Cards
