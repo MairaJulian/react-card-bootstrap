@@ -57,6 +57,7 @@ function Cards() {
         <div>
             <div className='container d-flex justify-content-center animate__animated animate__rotateIn' id='titulo'>
                 <h1>Visita mis redes sociales</h1>
+                <h3>Maira Julian</h3>
             </div>
             <div className='container d-flex justify-content-center align-items-center h-100'>
                 <div className='row'>
